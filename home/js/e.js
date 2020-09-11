@@ -1,16 +1,26 @@
 
+$('.dark').click(function(){
+  $('.change').addClass('dark-mood').removeClass('light-mood');
+  $('.change-color-h').addClass('dark-color-h').removeClass('light-color-h');
+  $('.change-color-p').addClass('dark-color-p').removeClass('light-color-p');
+  $('change-footer').addClass('footer-dark').removeClass('footer-light');
 
+})
+$('.light').click(function(){
+  $('.change').addClass('light-mood').removeClass('dark-mood');
+  $('.change-color-h').addClass('light-color-h').removeClass('dark-color-h');
+  $('.change-color-p').addClass('light-color-p').removeClass('dark-color-p');
+  $('change-footer').addClass('footer-light').removeClass('footer-dark');
+})
 
 $(window).on("scroll",function(){
   if($(window).scrollTop()>=100) {
       $('.nav-scroll').css({
-        backgroundColor:'#FFF',
         boxShadow:'4px 4px 3px #F5F5F5',
       });
     }
       else {
         $('.nav-scroll').css({
-          backgroundColor:'#FFF',
           boxShadow:'none',
 
         });

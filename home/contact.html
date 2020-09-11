@@ -12,7 +12,7 @@
         <title>Pro Traders</title>
         <link   
              rel = "icon" 
-            href ="images/forex-logo-white.jpg" 
+            href ="images/final white-01.png" 
             type = "image/x-icon">
         <link rel="shortcut icon" href="images/forex-logo-white.jpg">
         <!--call bootstrap-->
@@ -51,16 +51,16 @@
 
        <!---->
 	</head>
-	<body>
+	<body class="light-mood change">
         <!--- not !! ---->
         <!---- All Styles In Contact Page in pages folder in sass folder except 
             navbar you will find it in header.scss component but nav-contact 
             exist in contact.scss also ----->
         <main class="contact-main">
             <div class="Nav wow fadeInUp">
-                <nav class="navbar navbar-expand-lg navbar-light nav-scroll  fixed-top  py-4  mb-5 pl-5 pr-5">
+                <nav class="navbar navbar-expand-lg navbar-light-mood nav-scroll  fixed-top  py-4  mb-5 pl-5 pr-5">
                     <div class="container">
-                        <img src="images/forex-logo-white.jpg" style=" width: 120px " >                        
+                        <img src="images/final white-01.png" style=" width: 100px;height: 70px; " >                        
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -74,7 +74,17 @@
                                 </li>
                                 <li class="nav-item pr-5">
                                     <a class="nav-link nav-contact" href="contact.html">Contact</a>
-                                </li>  
+                                </li>
+                                <li class="nav-item dropdown dropdown-move position-relative pr-5">
+                                    <a class="nav-link dropdown-toggle nav-contact" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Mode
+                                    </a>
+                                    <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+                                    <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
+                                      <a class="dropdown-item nav-light light" href="#">Light</a>
+                                      <a class="dropdown-item nav-light dark" href="#">Dark</a>
+                                    </div>
+                                </li>   
                                 <li class="nav-item shadow-sm "><a class="nav-link nav-contact p-3" style="color: #FFF !important;" href="../form/index.html">Get Start</a></li>                      
                             </ul>
                         </div>
@@ -85,11 +95,11 @@
             <div class="Contact">
                     <div class="container">
                         <div class="contact-content text-center">
-                            <div class="contact-content__title w-100">
+                            <div class="contact-content__title w-100 light-color-h change-color-h">
                                 HAVE SOME QUESTIONS?
                             </div>
-                            <div class="location-content mt-3">
-                                <span><i class="fas fa-globe mr-3 globe-icon"></i></span> <span class="mr-5">LOCATION</span> Assuit : Assuit University   
+                            <div class="location-content mt-3 light-color-h change-color-h">
+                                <span class="light-color-h change-color-h"><i class="fas fa-globe mr-3 globe-icon light-color-h change-color-h"></i></span> <span class="mr-5 light-color-h change-color-h">LOCATION</span> Assuit : Assuit University   
                             </div>
                         </div>
                         <div class="contact-operations">
@@ -147,18 +157,6 @@
 
 
     
-
-
-        <footer class="contact-footer">
-            <div class="contact-footer__main">Subscribe to our newsletter.</div>
-            <div class="contact-footer__sub mt-4">We'll send you occasional but very useful tips about building products and startup without a single line of code</div>
-            <div>
-                <div class=" d-flex justify-content-center w-100 mt-5" style="flex-wrap: wrap;">
-                    <input type="email" name="" id="" placeholder="What's your email?" class="contact-footer__input mr-3 mt-3">
-                    <button class="contact-footer__button mt-3">subscribe</button>
-                </div>
-            </div>
-        </footer>
 
         <footer class="footer" id="footer" style="background-color:#192057 !important ; color: #FFF !important;">
             <div class="container ">
