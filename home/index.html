@@ -36,6 +36,10 @@
        <!---->
 
        <style>
+           .navbar-toggler:not(:disabled):not(.disabled) {
+                cursor: pointer;
+                background: #FFF;
+            }
            .li-cat {
             cursor: pointer;
             top: 0px;
@@ -78,7 +82,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light-mood nav-scroll  fixed-top  py-4  mb-5 pl-5 pr-5">
                     <div class="container">
-                        <img src="images/final white-01.png" style=" width: 100px ; height: 70px;" >                        
+                        <img src="images/final white-01.png" style=" width: 100px ; height: 80px;" >                        
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -111,12 +115,12 @@
                                 </li> 
                                 <li class="nav-item dropdown dropdown-move position-relative pr-5">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <img src="images/Wikipedia-Flags-EG-Egypt-Flag.ico" alt="" style="width:25px"> 
+                                        <img src="images/ksa.webp" alt="" style="width:35px"> 
                                     </a>
-                                    <!-- Here's the magic. Add the .animate and .slide-in classes to your .dropdown-menu and you're all set! -->
+
                                     <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                                      <a class="dropdown-item nav-contact" href="#">Arabic</a>
-                                      <a class="dropdown-item nav-contact" href="#">English</a>
+                                      <a class="dropdown-item nav-contact" style="color: #000 !important;" href="#"><img class="mr-1" style="width: 25px;" src="images/ksa.webp" alt=""> Arabic</a>
+                                      <a class="dropdown-item nav-contact" style="color: #000 !important;"  href="#"><img class="mr-1" style="width: 25px;" src="images/usa.png" alt=""> English</a>
                                     </div>
                                 </li>
                                 <li class="nav-item shadow-sm "><a class="nav-link nav-contact p-3" style="color: #FFF !important;" href="../form/index.html">Get Start</a></li>                      
@@ -148,7 +152,9 @@
                         </div>
                         <div class="col-lg-6 position-relative pt-5">
                             <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/NQzxIUMeaq0?autoplay=1"></iframe>
+                                <video controls="true" class="embed-responsive-item">
+                                    <source src="https://www.youtube.com/embed/NQzxIUMeaq0?autoplay=1" type="video/mp4" />
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -281,9 +287,7 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="embed-responsive embed-responsive-16by9">
-                            <video controls="true" class="embed-responsive-item">
-                                <source src="images/forex.mp4" type="video/mp4" />
-                            </video>
+                            <iframe class="embed-responsive-item" src="images/forex.mp4"></iframe>
                         </div>
                     </div>
                     <div class="col-lg-6">
